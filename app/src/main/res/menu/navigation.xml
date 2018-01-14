@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_dublin"
+        android:icon="@android:drawable/btn_radio"
+        android:title="@string/dublin_tab_label" />
+
+    <item
+        android:id="@+id/navigation_latest"
+        android:icon="@android:drawable/btn_radio"
+        android:title="@string/latest_tab_label" />
+
+    <item
+        android:id="@+id/navigation_rainradar"
+        android:icon="@android:drawable/btn_radio"
+        android:title="@string/rainradar_tab_label" />
+
+    <item
+        android:id="@+id/navigation_outlook"
+        android:icon="@android:drawable/btn_radio"
+        android:title="@string/outlook_tab_label" />
+
+</menu>

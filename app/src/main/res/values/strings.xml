@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Irish Weather</string>
+
+    <string name="dublin_tab_label">Dublin</string>
+    <string name="latest_tab_label">Latest</string>
+    <string name="rainradar_tab_label">Radar</string>
+    <string name="outlook_tab_label">Outlook</string>
+</resources>
