@@ -4,10 +4,10 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.mikebl71.android.irishweather"
-        minSdkVersion 19
+        minSdkVersion 14
         targetSdkVersion 27
-        versionCode 20001
-        versionName "2.0.1"
+        versionCode 20002
+        versionName "2.0.2"
     }
     buildTypes {
         release {
