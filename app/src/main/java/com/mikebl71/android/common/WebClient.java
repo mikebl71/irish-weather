@@ -15,6 +15,7 @@ import java.util.Map;
  * Client for retrieving content of a Web resource.
  */
 public class WebClient {
+    private static final Charset CHARSET_UTF8 = Charset.forName("UTF-8");
 
     public ResourceContent retrieve(String url) {
         return retrieve(url, null, null, null);
@@ -100,7 +101,7 @@ public class WebClient {
             }
         } catch (Exception ex) {
         }
-        return StandardCharsets.UTF_8;
+        return CHARSET_UTF8;
     }
 
     private static byte[] convertToByteArray(final HttpURLConnection urlConnection) throws IOException {

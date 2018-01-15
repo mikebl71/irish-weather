@@ -75,8 +75,14 @@ public class ResourceContent implements Serializable {
 
     public Drawable getDrawableOrThrow() throws Exception {
         if (drawableContent == null) {
-            try (InputStream is = getBinaryOrThrow()) {
+            InputStream is = null;
+            try {
+                is = getBinaryOrThrow();
                 drawableContent = Drawable.createFromStream(is, "image");
+            } finally {
+                if (is != null) {
+                    is.close();
+                }
             }
         }
         return drawableContent;
