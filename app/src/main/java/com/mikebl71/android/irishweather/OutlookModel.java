@@ -10,7 +10,7 @@ import com.mikebl71.android.common.UrlManager;
 public class OutlookModel extends AbstractTextResourceModel {
 
     private final UrlManager urlManager = UrlManager.builder()
-            .url("http://www.met.ie/forecasts/")
+            .url("http://archive.met.ie/forecasts/")
             .bodyFrom("<span class=\"daybox\">Outlook</span>")
             .bodyTo("</td>")
             .contentTransformer(new OutlookTransformer())

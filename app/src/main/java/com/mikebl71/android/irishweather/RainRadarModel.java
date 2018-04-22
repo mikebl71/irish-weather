@@ -23,8 +23,8 @@ public class RainRadarModel {
 
     // radar2.xml contains list of links to radar images
     private final UrlManager linksPageUrlManager = UrlManager.builder()
-            .url("http://www.met.ie/weathermaps/radar2/radar4_6hr.xml")
-            .header("Referer", "http://www.met.ie/latest/rainfall_radar.asp")
+            .url("http://archive.met.ie/weathermaps/radar2/radar4_6hr.xml")
+            .header("Referer", "http://archive.met.ie/latest/rainfall_radar.asp")
             .build();
 
     private SortedMap<Date, UrlManager> imageUrlManagers = new TreeMap<>(new DescendingDateComparator());
@@ -87,7 +87,7 @@ public class RainRadarModel {
                         if (urlManager == null) {
                             urlManager = UrlManager.builder()
                                     .url(linkEntry.getValue())
-                                    .header("Referer", "http://www.met.ie/latest/rainfall_radar.asp")
+                                    .header("Referer", "http://archive.met.ie/latest/rainfall_radar.asp")
                                     .reference(linkDate)
                                     .upToDateMs(Long.MAX_VALUE)
                                     .build();

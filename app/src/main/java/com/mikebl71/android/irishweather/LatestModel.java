@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
 public class LatestModel extends AbstractTextResourceModel {
 
     private final UrlManager urlManager = UrlManager.builder()
-            .url("http://www.met.ie/latest/reports.asp")
+            .url("http://archive.met.ie/latest/reports.asp")
             .bodyFrom("<b>LATEST IRISH WEATHER REPORTS")
             .bodyTo("</table>")
             .contentTransformer(new LatestTransformer())

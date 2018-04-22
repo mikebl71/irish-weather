@@ -10,7 +10,7 @@ import com.mikebl71.android.common.UrlManager;
 public class DublinModel extends AbstractTextResourceModel {
 
     private final UrlManager urlManager = UrlManager.builder()
-            .url("http://www.met.ie/forecasts/regional.asp?Prov=Dublin")
+            .url("http://archive.met.ie/forecasts/regional.asp?Prov=Dublin")
             .bodyFrom("<span class=\"orangetext\">")
             .bodyTo("<p><a name=\"l\"")
             .contentTransformer(new DublinTransformer())

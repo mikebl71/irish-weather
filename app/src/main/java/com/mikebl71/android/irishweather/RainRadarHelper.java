@@ -48,7 +48,7 @@ public class RainRadarHelper {
                 String fileName = parser.getAttributeValue(null, "src");
                 String timestampStr = fileName.substring(fileName.indexOf("20"), fileName.indexOf('.'));
                 sortedLinks.put(timestampFormat.parse(timestampStr),
-                        "http://www.met.ie/weathermaps/radar2/" + fileName);
+                        "http://archive.met.ie/weathermaps/radar2/" + fileName);
             }
             eventType = parser.next();
         }
